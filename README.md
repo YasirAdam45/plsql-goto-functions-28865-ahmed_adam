@@ -50,7 +50,7 @@ plsql-goto-functions-28865-ahmed/
 
 ## 3. Requirements
 - Oracle Database (XE 18c/21c or later)
-- Oracle SQL Developer (or SQL*Plus)
+- Oracle SQL Developer 
 - In SQL Developer: enable **View > DBMS Output** and run scripts with **F5 (Run Script)**
 
 ## 4. How to Run
