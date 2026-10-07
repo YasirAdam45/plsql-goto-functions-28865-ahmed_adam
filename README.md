@@ -77,27 +77,31 @@ Sample data: employees 101-105 are valid. Employees 106 (no department), 107 (ze
 Classifies a number as positive, negative or zero, then even or odd, using `GOTO` and labels.
 **Expected (7):** `Sign: Positive`, `Parity: Odd`.
 
-![A1 output](screenshots/A1_output.png)
+<img width="2518" height="1044" alt="A1_output" src="https://github.com/user-attachments/assets/d91bc969-3dbb-43c6-91c0-b48bea5301a9" />
+
 
 ### A2: Salary Review
 `01_goto/A2_salary_review.sql`
 Reads an employee, calculates the annual salary with `fn_annual_salary`, then uses `GOTO` to jump to a salary band (Senior / Mid / Entry).
 **Expected (emp 101):** Annual `18000000`, then `Senior band`.
 
-![A2 output](screenshots/A2_output.png)
+<img width="2512" height="908" alt="A2_output" src="https://github.com/user-attachments/assets/8ab41f88-9696-4b34-a57c-bebd4e4f9c49" />
+
 
 ### A3: Illegal GOTO and Fix
 `01_goto/A3_illegal_goto.sql`
 - **Illegal:** jumping *into* an `IF` block raises `PLS-00375: illegal GOTO statement; this label is not within the scope of the GOTO statement`.
 - **Fix:** put the label in the same or an enclosing block. Jumping *out* of a block is allowed.
 
-![A3 error and fix](screenshots/A3_error_and_fix.png)
+<img width="2521" height="1040" alt="A3_error_and_fix" src="https://github.com/user-attachments/assets/2b14602a-9b30-4b6b-a480-0646327cd92e" />
+
 
 ### A4: Rewrite Without GOTO
 `01_goto/A4_rewrite_no_goto.sql`
 Same logic as A2 using `IF / ELSIF / ELSE`. The output is identical, and the code is shorter and easier to read.
 
-![A4 output](screenshots/A4_output.png)
+<img width="2551" height="865" alt="A4_output" src="https://github.com/user-attachments/assets/1ec49340-376d-4f3f-bf23-32874bd2cc85" />
+
 
 ---
 
@@ -124,7 +128,8 @@ Same logic as A2 using `IF / ELSIF / ELSE`. The output is identical, and the cod
 `03_tests/B5_functions_in_select.sql`
 One `SELECT` that uses all four functions on the `employees` table. Employee 108 is excluded because the hire date is in the future.
 
-![B5 select output](screenshots/B5_select_output.png)
+<img width="2546" height="970" alt="B5_select_output" src="https://github.com/user-attachments/assets/ccc4f9e8-063e-464e-b9a2-52f5c7701e9e" />
+
 
 ---
 
@@ -142,7 +147,10 @@ One `SELECT` that uses all four functions on the `employees` table. Employee 108
 | 108 | `INVALID: hire date is in the future.` |
 | 999 | `INVALID: employee 999 not found.` |
 
-![C1 output](screenshots/C1_output.png)
+<img width="2539" height="1087" alt="C1_output" src="https://github.com/user-attachments/assets/e12d9642-3f77-41d4-b94a-5ab5f13a39a5" />
+<img width="2527" height="1050" alt="C1_output_2" src="https://github.com/user-attachments/assets/2b0dca51-9396-42cb-8360-d3015cfb31af" />
+
+
 
 ### C2: Reflection
 See [docs/REFLECTION.md](docs/REFLECTION.md).
